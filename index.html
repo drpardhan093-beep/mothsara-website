@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOTHSARA | Digital Marketing Agency</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101010;
+    border-bottom: 1px solid #b99442;
+}
+
+.logo {
+    color: #e5bd65;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+nav a:hover {
+    color: #e5bd65;
+}
+
+.hero {
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #302512, #080808 70%);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 70px);
+    margin-bottom: 20px;
+}
+
+.gold {
+    color: #e5bd65;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background: #d8ad52;
+    color: black;
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #151515;
+    padding: 35px 22px;
+    border: 1px solid #38302a;
+    border-radius: 10px;
+}
+
+.card:hover {
+    border-color: #e5bd65;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #e5bd65;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.about {
+    background: #111;
+}
+
+.about p {
+    color: #ccc;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.contact {
+    background: #17130c;
+}
+
+.contact p {
+    color: #ccc;
+    line-height: 2;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+    background: #050505;
+    border-top: 1px solid #8e7137;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+    nav a {
+        margin: 7px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MOTHSARA.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Grow Your Business<br>
+    With <span class="gold">MOTHSARA</span></h1>
+
+    <p>
+    We help businesses grow online with powerful
+    digital marketing, creative ideas and smart strategies.
+    </p>
+
+    <a href="#contact" class="btn">GET STARTED</a>
+</div>
+
+<section id="services">
+    <h2 class="section-title">Our <span class="gold">Services</span></h2>
+    <p class="subtitle">Everything your business needs to grow online.</p>
+
+    <div class="services">
+        <div class="card">
+            <h3>Social Media Marketing</h3>
+            <p>Grow your brand on Instagram, Facebook and other platforms.</p>
+        </div>
+
+        <div class="card">
+            <h3>Google Ads</h3>
+            <p>Reach the right customers with effective advertising campaigns.</p>
+        </div>
+
+        <div class="card">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website visibility on Google search.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Get a professional website for your business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Content Creation</h3>
+            <p>Creative posts, reels and videos for your brand.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Branding</h3>
+            <p>Build a strong and memorable identity for your business.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About <span class="gold">MOTHSARA</span></h2>
+    <p>
+    MOTHSARA is a digital marketing brand focused on helping
+    businesses build their online presence.
+    Our goal is to provide creative marketing solutions,
+    quality services and affordable growth strategies.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Let's Grow Your <span class="gold">Business</span></h2>
+    <p>Ready to take your business to the next level?</p>
+    <p>Contact MOTHSARA and let's work together.</p>
+    <a href="mailto:your@email.com" class="btn">CONTACT US</a>
+</section>
+
+<footer>
+    <p>© 2026 MOTHSARA Digital Marketing. All Rights Reserved.</p>
+    <p>Build Your Business. Grow Your Brand.</p>
+</footer>
+
+</body>
+</html>
