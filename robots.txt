@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://drpardhan093-beep.github.io/mothsara-website/sitemap.xml
